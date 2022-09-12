@@ -14,4 +14,15 @@ This app needs the following environment Variables
 - `PORT` the server http port for the application
 - `NODE_ENV` node environment
 
-# sudokugame
+# Comandos utiles para instalar las dependencias de forma manual
+
+npm init -y
+
+#depedencias principales 
+npm i express connect-flash bcryptjs express-session express-handlebars method-override mongoose passport passport-local
+
+#son depedencias Secundarias por eso va el "-D"
+npm i dotenv nodemon handlebars npm-check-updates -D 
+
+
+git init
