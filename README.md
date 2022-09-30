@@ -3,7 +3,7 @@ Para inciar el server de node ejecutar las siguiente lineas:
 
 npm i
 npm run dev # run in development mode
-npm start # run in production mode
+npm run start # run in production mode
 ```
 
 > Para la Base de Datos Mongodb, tomar en cuenta lo siguiente:
