@@ -1,3 +1,15 @@
+html{
+	width: 99%;
+	height: 96%;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(#fff, #333);
+	border-radius: 15px;
+	position:relative;
+}
 .board {
     table-layout: fixed;
     border: #443 3px solid;
