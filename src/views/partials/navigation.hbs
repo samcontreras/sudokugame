@@ -20,6 +20,7 @@
       </ul>
       <ul class="navbar-nav ms-auto">
         {{#if user}}
+      <ul>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -38,16 +39,6 @@
               <a class="dropdown-item" href="/auth/logout">Cerrar sesión</a>
             </ul>
           </li>
-          <div class="col-md-4 mx-auto">
-            <div class="col text-center">
-              <a
-                class="btn btn-success center-block"
-              href="\index.html"
-              role="button">
-              JUGAR
-              </a>
-            </div>
-          </div>
         {{else}}
           <li class="nav-item">
             <a class="nav-link" href="/auth/signin">Ingresar</a>
