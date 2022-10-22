@@ -5,3 +5,7 @@ export const renderIndex = (req, res) => {
 export const renderAbout = (req, res) => {
   res.render("about");
 };
+
+export const renderSudoku = (req, res) => {
+  res.render("sudoku");
+};

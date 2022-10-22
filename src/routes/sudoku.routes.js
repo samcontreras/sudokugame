@@ -1,7 +1,12 @@
 import { Router } from "express";
 import {
-  
-} from "../controllers/sodoku.controller.js";
+  // renderNoteForm,
+  // createNewNote,
+  // renderNotes,
+  // renderEditForm,
+  // updateNote,
+  // deleteNote,
+} from "../controllers/sudoku.controller.js";
 import { isAuthenticated } from "../helpers/auth.js";
 
 const router = Router();

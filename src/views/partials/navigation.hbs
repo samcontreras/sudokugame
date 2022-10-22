@@ -17,11 +17,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/about">Acerca del juego</a>
         </li>
-      </ul>
-      <ul class="navbar-nav ms-auto">
-        {{#if user}}
-      <ul>
-          <li class="nav-item dropdown">
+         <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -35,10 +31,39 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="/notes">Todas la opiniones</a>
               <a class="dropdown-item" href="/notes/add">Agregar una opinion</a>
+            </ul>
+          </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        {{#if user}}
+      
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Mi Perfil
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/sudoku">Sudoku</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/auth/logout">Cerrar sesión</a>
             </ul>
-          </li>
+        </li>
+          {{!-- <div class="col-md-4 mx-auto">
+            <div class="col text-center">
+              <a
+                class="btn btn-success center-block"
+              href="\sudoku.hbs"
+              role="button">
+              JUGAR
+              </a>
+            </div>
+          </div> --}}
         {{else}}
           <li class="nav-item">
             <a class="nav-link" href="/auth/signin">Ingresar</a>

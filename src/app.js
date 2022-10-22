@@ -13,6 +13,7 @@ import { MONGODB_URI, PORT } from "./config.js";
 
 import indexRoutes from "./routes/index.routes.js";
 import notesRoutes from "./routes/notes.routes.js";
+import sudokuRoutes from "./routes/sudoku.routes.js";
 import userRoutes from "./routes/auth.routes.js";
 import "./config/passport.js";
 
@@ -29,6 +30,7 @@ const hbs = exphbs.create({
   defaultLayout: "main",
   layoutsDir: join(app.get("views"), "layouts"),
   partialsDir: join(app.get("views"), "partials"),
+  sudokuDir: join(app.get("views"), "sudoku"),
   extname: ".hbs",
 });
 app.engine(".hbs", hbs.engine);
@@ -63,6 +65,7 @@ app.use((req, res, next) => {
 app.use(indexRoutes);
 app.use(userRoutes);
 app.use(notesRoutes);
+app.use(sudokuRoutes);
 
 // static files
 app.use(express.static(join(__dirname, "public")));
