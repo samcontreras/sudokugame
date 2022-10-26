@@ -2,4 +2,4 @@ import { config } from "dotenv";
 config();
 
 export const PORT = process.env.PORT || 4200;
-export const MONGODB_URI = "mongodb+srv://scontreras:Mongodb6891@cluster0.72vwjqz.mongodb.net/sudokugame?retryWrites=true&w=majority";
+export const MONGODB_URI = "mongodb+srv://Clemen:45eoYCymZMkDJBli@cluster0.5ycrszm.mongodb.net/test";

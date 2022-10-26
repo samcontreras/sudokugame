@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-const sudokuSchema = new mongoose.Schema(
+const SudokuSchema = new mongoose.Schema(
   {
-    Partida_Nro: {
+    Nropartida: {
       type: String,
       required: true,
     },
@@ -20,4 +20,4 @@ const sudokuSchema = new mongoose.Schema(
   }
 );
 
-export default mongoose.model("Sudoku", sudokuSchema);
+export default mongoose.model("Sudoku", SudokuSchema);
