@@ -137,26 +137,4 @@ function changeDifficuty(value) {
     gameDifficuty = value;
 }
 
-let hour=0;
-let minute=0;
-let seconds=0;
-let timer=null;
-
-function timer(){
-        if(s<60){
-            seconds++;
-        }else{
-            seconds=0;
-        }
-        if(s>60){
-            minute++;
-        }else{
-            minute=0;
-        }
-        if(m==60){
-            hour ++;
-        }
-    }
-
-
 genBoard();

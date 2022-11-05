@@ -20,6 +20,7 @@ class TimeUtil {
         let h = now.getHours()   - this.startTime.getHours();
         let m = now.getMinutes() - this.startTime.getMinutes();
         let s = now.getSeconds() - this.startTime.getSeconds();
+        let timeUnix;
         if( s < 0 ) {
             m --;
             s += 60;
@@ -32,6 +33,8 @@ class TimeUtil {
         m = this.addZero(m);
         s = this.addZero(s);
         this.tLabel.innerHTML = h + ":" + m + ":" + s ;
+
+        timeUnix=(h*60)*3600 + (m*3600)+ s;
     }
 
     addZero(i) {
@@ -96,6 +99,7 @@ function genBoard() {
 }
 
 function placeGrid(t) {
+    let timer;
     let value = new Number(t.value);
     if( isNaN(value ) || value < 1 || value > 9 ) {
         t.value = ""
@@ -114,6 +118,7 @@ function placeGrid(t) {
         if(boardValid) {
             resultLabel.innerHTML = `Juego terminado, haz ganado, tu tiempo usado es: ${timeLabel.innerHTML}`;
             resultLabel.setAttribute("class", "result-right");
+            timer=timeLabel;
             tu.stop();
         }
         else {
@@ -136,6 +141,8 @@ function checkInputs() {
 function changeDifficuty(value) {
     gameDifficuty = value;
 }
+
+
 
 
 genBoard();
