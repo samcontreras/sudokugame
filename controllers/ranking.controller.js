@@ -2,10 +2,10 @@ import Ranking from "../models/Ranking.js";
 
 export const newTime = async(req, res) => {
     try {
-        const { time, difficulty, user } = req.body;
+        const { time, difficuty, user } = req.body;
         const timeRank = {
             "time": time,
-            "difficulty": difficulty,
+            "difficuty": difficuty,
             "user": user,
         };
         const cant = await Ranking.count();

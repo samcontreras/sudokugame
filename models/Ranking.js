@@ -5,7 +5,7 @@ const rankingSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    difficulty: {
+    difficuty: {
         type: String,
         required: true
     },

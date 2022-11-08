@@ -123,7 +123,7 @@ function placeGrid(t) {
         if (boardValid) {
             let newRanking = {
                 time: countTimer,
-                difficulty: "dificil", // ACA HAY QUE PASAR EL NIVEL CORRECTO
+                difficuty: "dificil", // ACA HAY QUE PASAR EL NIVEL CORRECTO
                 user: 123 // ACA HAY QUE PASAR EL USER ID CORRECTO
             };
 
