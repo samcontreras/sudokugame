@@ -1,0 +1,37 @@
+<link rel="Stylesheet" type="text/css" href="./css/sudoku.css" />
+{{#if user}}
+<ul class="sodoku">
+        {{sudoku}}
+    <div align="center">
+      <div id="gamediv" align="center">
+
+      </div>
+      <div>
+        <p id="result-label" class="result-normal"></p>
+      </div>
+      <hr />
+      <div id="time">
+        <p id="time-label">00:00:00</p>
+      </div>
+      <div id="difficuty">
+        <input type="radio" name="difficuty" value="1" onmouseup="changeDifficuty(this.value)" checked="checked" />Facil
+        <input type="radio" name="difficuty" value="2" onmouseup="changeDifficuty(this.value)" /> Normal
+        <input type="radio" name="difficuty" value="3" onmouseup="changeDifficuty(this.value)" /> Dificil
+      </div>
+
+      <!-- <select id="difficuty" class="button">
+				<option value="1">Facil</option>
+				<option value="1">Medio</option>
+				<option value="3">Dificil</option>
+			</select> -->
+
+      <div id="buttons">
+        <button onclick="genBoard()" type="button">Restablecer Juego</button>
+        <button onclick="tu.startTimer()" type="button">Empezar Juego</button>
+    </div>
+
+  <script src="./sudokuCore.js"></script>
+  <script src="./sudoku.js"></script>
+  <script src="http://apps.bdimg.com/libs/jquery/1.8.1/jquery.min.js"></script>
+  {{/if}}
+    </div></ul>

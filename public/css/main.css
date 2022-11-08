@@ -1,0 +1,32 @@
+body {
+  background: #0e1aff;
+  min-height: 100vh;
+  display:grid;
+  grid-template-rows: auto 1fr auto;
+  /* font-weight: 200;
+  letter-spacing: 0px;
+  box-sizing: border-box; */
+}
+
+.logo {
+  width: 30%;
+}
+
+.bg-black {
+  background: #007d5c;
+}
+
+.g-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+} 
+
+.g-footer {
+  margin-top: auto;
+  flex-shrink: 0;
+  height: 10px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+}
