@@ -9,3 +9,7 @@ export const renderAbout = (req, res) => {
 export const renderSudoku = (req, res) => {
   res.render("sudoku");
 };
+
+export const renderRanking = (req, res) => {
+  res.render("ranking");
+};

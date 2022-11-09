@@ -17,23 +17,11 @@
         <li class="nav-item">
           <a class="nav-link" href="/about">Acerca del juego</a>
         </li>
-         <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Opiniones
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/notes">Todas la opiniones</a>
-              <a class="dropdown-item" href="/notes/add">Agregar una opinion</a>
-            </ul>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ranking">Ranking del juego</a>
+        </li>
       </ul>
+
       <ul class="navbar-nav ms-auto">
         {{#if user}}
       
@@ -49,11 +37,16 @@
               Mi Perfil
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/sudoku">Sudoku</a>
+              <a class="dropdown-item" href="../index.html">Sudoku</a>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item dropdown">
+              <a class="dropdown-item" href="/notes">Mis anotaciones</a>
+              <a class="dropdown-item" href="/notes/add">Agregar nueva</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/auth/logout">Cerrar sesión</a>
             </ul>
-        </li>
+          </li>
+          
           {{!-- <div class="col-md-4 mx-auto">
             <div class="col text-center">
               <a
